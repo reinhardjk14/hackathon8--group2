@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <title>Bookshelf Shop</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand text-dark" href="#" id="title">Bookshelf Shop</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-dark bg-warning" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Search By Category
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action and Adventure</a></li>
+                <li><a class="dropdown-item" href="#">Comic</a></li>
+                <li><a class="dropdown-item" href="#">Fantasy</a></li>
+                <li><a class="dropdown-item" href="#">Horror</a></li> 
+                <li><a class="dropdown-item" href="#">Romance</a></li>
+              </ul>
+            </li>
+          </ul>   
+        </div>
+      </div>
+      <a href="#"><img id='cart' src="/node_modules/bootstrap-icons/icons/cart4.svg" alt=""></a>
+    </nav>
+  </header>
+  <main>
+    <div class="row row-cols-1 row-cols-md-5 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="/assets/thepoweroffocus.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">The Power Of Focus</h5>
+            <p class="card-text">Rifian Candra Kusuma</p>
+            <p class="card-text">Category: Self-Development</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Price: IDR 73.000</small>
+            <small class="text-muted">Stock: 10</small>
+            <a class="add-to-cart" href="#"><small class="text-muted">add to cart</small></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="/assets/detektifconan.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Detektif Conan 100</h5>
+            <p class="card-text">Aoyama Gosho</p>
+            <p class="card-text">Category: Comic</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Price: IDR 50.000</small>
+            <small class="text-muted">Stock: 10</small>
+            <a class="add-to-cart" href="#"><small class="text-muted">add to cart</small></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="/assets/baroninthetrees.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">The Baron In The Trees</h5>
+            <p class="card-text">Italo Calvino</p>
+            <p class="card-text">Category: Fantasy</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Price: IDR 153.000</small>
+            <small class="text-muted">Stock: 10</small>
+            <a class="add-to-cart" href="#"><small class="text-muted">add to cart</small></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="/assets/thecellar.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">The Cellar</h5>
+            <p class="card-text">A.J. Whitten</p>
+            <p class="card-text">Category: Horror</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Price: IDR 181.000</small>
+            <small class="text-muted">Stock: 10</small>
+            <a class="add-to-cart" href="#"><small class="text-muted">add to cart</small></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="/assets/firstorfakelove.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">First or Fake Love</h5>
+            <p class="card-text">Remiel</p>
+            <p class="card-text">Category: Romance</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Price: IDR 76.000</small>
+            <small class="text-muted">Stock: 10</small>
+            <a class="add-to-cart" href="#"><small class="text-muted">add to cart</small></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-5 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="/assets/sebuahseni.png.">
+          <div class="card-body">
+            <h5 class="card-title">Sebuah Seni untuk Bersikap Bodo Amat</h5>
+            <p class="card-text">Mark Manson</p>
+            <p class="card-text">Category: Self-Development</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Price: IDR 78000.000</small>
+            <small class="text-muted">Stock: 10</small>
+            <a class="add-to-cart" href="#"><small class="text-muted">add to cart</small></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="/assets/detektifconan.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Spy x Family 02</h5>
+            <p class="card-text">Endon Tatsuya</p>
+            <p class="card-text">Category: Comic</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Price: IDR 45.000</small>
+            <small class="text-muted">Stock: 10</small>
+            <a class="add-to-cart" href="#"><small class="text-muted">add to cart</small></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="/assets/baroninthetrees.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">The Cellar</h5>
+            <p class="card-text">Italo Calvino</p>
+            <p class="card-text">Category: Fantasy</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Price: IDR 73.000</small>
+            <small class="text-muted">Stock: 10</small>
+            <a class="add-to-cart" href="#"><small class="text-muted">add to cart</small></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="/assets/baroninthetrees.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">The Baron In The Trees</h5>
+            <p class="card-text">Italo Calvino</p>
+            <p class="card-text">Category: Fantasy</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Price: IDR 73.000</small>
+            <small class="text-muted">Stock: 10</small>
+            <a class="add-to-cart" href="#"><small class="text-muted">add to cart</small></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="/assets/baroninthetrees.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">The Baron In The Trees</h5>
+            <p class="card-text">Italo Calvino</p>
+            <p class="card-text">Category: Fantasy</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Price: IDR 73.000</small>
+            <small class="text-muted">Stock: 10</small>
+            <a class="add-to-cart" href="#"><small class="text-muted">add to cart</small></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-5 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="/assets/thepoweroffocus.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">The Power Of Focus</h5>
+            <p class="card-text">Rifian Candra Kusuma</p>
+            <p class="card-text">Category: Self-Development</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Price: IDR 73.000</small>
+            <small class="text-muted">Stock: 10</small>
+            <a class="add-to-cart" href="#"><small class="text-muted">add to cart</small></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="/assets/detektifconan.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Detektif Conan 100</h5>
+            <p class="card-text">Aoyama Gosho</p>
+            <p class="card-text">Category: Comic</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Price : IDR 73.000</small>
+            <small class="text-muted">Stock: 10</small>
+            <a class="add-to-cart" href="#"><small class="text-muted">add to cart</small></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="/assets/baroninthetrees.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">The Baron In The Trees</h5>
+            <p class="card-text">Italo Calvino</p>
+            <p class="card-text">Category: Fantasy</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Price : IDR 73.000</small>
+            <small class="text-muted">Stock: 10</small>
+            <a class="add-to-cart" href="#"><small class="text-muted">add to cart</small></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="/assets/baroninthetrees.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">The Baron In The Trees</h5>
+            <p class="card-text">Italo Calvino</p>
+            <p class="card-text">Category: Fantasy</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Price : IDR 73.000</small>
+            <small class="text-muted">Stock: 10</small>
+            <a class="add-to-cart" href="#"><small class="text-muted">add to cart</small></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="/assets/baroninthetrees.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">The Baron In The Trees</h5>
+            <p class="card-text">Italo Calvino</p>
+            <p class="card-text">Category: Fantasy</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Price : IDR 73.000</small>
+            <small class="text-muted">Stock: 10</small>
+            <a class="add-to-cart" href="#"><small class="text-muted">add to cart</small></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-5 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="/assets/thepoweroffocus.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">The Power Of Focus</h5>
+            <p class="card-text">Rifian Candra Kusuma</p>
+            <p class="card-text">Category: Self-Development</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Price : IDR 73.000</small>
+            <small class="text-muted">Stock: 10</small>
+            <a class="add-to-cart" href="#"><small class="text-muted">add to cart</small></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="/assets/sleepinggiants.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Sleeping Giants</h5>
+            <p class="card-text">Sylvain Neuvel</p>
+            <p class="card-text">Category: Fantasy</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Price : IDR 88.000</small>
+            <small class="text-muted">Stock: 10</small>
+            <a class="add-to-cart" href="#"><small class="text-muted">add to cart</small></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <img src="/assets/sleepinggiants.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Sleeping Giants</h5>
+          <p class="card-text">Sylvain Neuvel</p>
+          <p class="card-text">Category: Fantasy</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Price : IDR 88.000</small>
+          <small class="text-muted">Stock: 10</small>
+          <a class="add-to-cart" href="#"><small class="text-muted">add to cart</small></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="/assets/passingstrange.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Passing Strange</h5>
+            <p class="card-text">Joseph Citro</p>
+            <p class="card-text">Category: Horror</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Price : IDR 148.000</small>
+            <small class="text-muted">Stock: 10</small>
+            <a class="add-to-cart" href="#"><small class="text-muted">add to cart</small></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="/assets/ohmybabyblue.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">MetroPop: Oh, My Baby Blue</h5>
+            <p class="card-text">Achi TM</p>
+            <p class="card-text">Category: Romance</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Price : IDR 89.000</small>
+            <small class="text-muted">Stock: 10</small>
+            <a class="add-to-cart" href="#"><small class="text-muted">add to cart</small></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-5 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="/assets/egoistheenemy.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ego Is The Enemy</h5>
+            <p class="card-text">Ryan Holiday</p>
+            <p class="card-text">Category: Self-Development</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Price : IDR 98.000</small>
+            <small class="text-muted">Stock: 10</small>
+            <a class="add-to-cart" href="#"><small class="text-muted">add to cart</small></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="/assets/miiko.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Hai, Miiko! 33 - Reguler</h5>
+            <p class="card-text">Eriko Ono</p>
+            <p class="card-text">Category: Comic</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Price : IDR 22.000</small>
+            <small class="text-muted">Stock: 10</small>
+            <a class="add-to-cart" href="#"><small class="text-muted">add to cart</small></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="/assets/bannerless.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Bannerless</h5>
+            <p class="card-text">Carrie Vaughn</p>
+            <p class="card-text">Category: Fantasy</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Price : IDR 144.000</small>
+            <small class="text-muted">Stock: 10</small>
+            <a class="add-to-cart" href="#"><small class="text-muted">add to cart</small></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="/assets/creepycaseclub.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Creepy Case Club 5: Kasus Jendela Siluman</h5>
+            <p class="card-text">Rizal Iwan</p>
+            <p class="card-text">Category: Horror</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Price : IDR 48.000</small>
+            <small class="text-muted">Stock: 10</small>
+            <a class="add-to-cart" href="#"><small class="text-muted">add to cart</small></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="/assets/baroninthetrees.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Young Adult: The Arson Project</h5>
+            <p class="card-text">Akaigita</p>
+            <p class="card-text">Category: Romance</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Price : IDR 86.000</small>
+            <small class="text-muted">Stock: 10</small>
+            <a class="add-to-cart" href="#"><small class="text-muted">add to cart</small></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+
+  </footer>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
+
