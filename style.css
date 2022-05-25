@@ -18,6 +18,12 @@
   text-shadow: 0.5px 0.5px white;
 }
 
+#opening {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
 .card-img-top {
   width: 200px;
   height: 350px;
