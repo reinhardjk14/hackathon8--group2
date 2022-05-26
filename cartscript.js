@@ -1,4 +1,5 @@
 let amount = document.getElementsByClassName("amount")[0].innerText
+let totalBayar = document.getElementsByClassName("total-amount")[0].innerText
 
 document.getElementsByClassName("amount")[0].innerText = `Rp ` + (15000 * document.getElementsByClassName("count")[0].innerText)
 
@@ -6,30 +7,33 @@ let qtyBuku = document.getElementsByClassName("count")
 let hargaBuku = document.getElementsByClassName("amount")
 
 
-function btnIncrease() {
+function btnIncrease0() {
   document.getElementsByClassName("count")[0].innerText++
   document.getElementsByClassName("amount")[0].innerText = `Rp ` + (15000 * document.getElementsByClassName("count")[0].innerText)
 
   document.getElementsByClassName("items")[0].innerText++
+  document.getElementsByClassName('total-amount')[0].innerText = `Rp ` + (15000 * document.getElementsByClassName("count")[0].innerText)
 }
 
-function btnDecrease() {
+function btnDecrease0() {
   document.getElementsByClassName("count")[0].innerText--
   document.getElementsByClassName("amount")[0].innerText = `Rp ` + (15000 * document.getElementsByClassName("count")[0].innerText)
-
+  document.getElementsByClassName('total-amount')[0].innerText = `Rp ` + (15000 * document.getElementsByClassName("count")[0].innerText)
+  
   if (document.getElementsByClassName("count")[0].innerText === 0) {
     alert("Hello! I am an alert box!")
   }
 }
 
-function btnIncrease() {
+function btnIncrease1() {
   document.getElementsByClassName("count")[1].innerText++
   document.getElementsByClassName("amount")[1].innerText = `Rp ` + (15000 * document.getElementsByClassName("count")[1].innerText)
 
   document.getElementsByClassName("items")[1].innerText++
+  
 }
 
-function btnDecrease() {
+function btnDecrease1() {
   document.getElementsByClassName("count")[1].innerText--
   document.getElementsByClassName("amount")[1].innerText = `Rp ` + (15000 * document.getElementsByClassName("count")[1].innerText)
 
@@ -41,7 +45,8 @@ function btnDecrease() {
 
 // =  = = = = = = =  CHECKOUT = = = = = = = = = =
 
-let totalBayar = document.getElementsByClassName("total-amount")[0].innerText
+
+
 
 function checkoutAlert() {
   let confirmAction = confirm(
