@@ -4,13 +4,25 @@
 }
 
 body {
-  background-image: url(./assets/bgimage.jpeg);
+  /* background-image: url(./assets/bgimage.jpeg); */
+  background-color: #28334aff !important;
 }
 
 main {
   margin-left: 15px;
   margin-right: 15px;
   margin-bottom: 30px;
+}
+
+#quote-container {
+  position: sticky;
+  margin-top: 15px;
+  margin-left: 80px;
+  width: 100%;
+}
+
+#quote {
+  color: white;  
 }
 
 #cart {

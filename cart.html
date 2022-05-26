@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping Cart UI</title>
+	<link rel="stylesheet" type="text/css" href="cart.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,900" rel="stylesheet">
+</head>
+<body>
+   <div class="CartContainer">
+   	   <div class="Header">
+   	   	<h3 class="Heading">Shopping Cart</h3>
+   	   	<h5 class="Action">Remove all</h5>
+   	   </div>
+
+   	   <div class="Cart-Items">
+   	   	  <div class="image-box">
+   	   	  	<img src="https://ebooks.gramedia.com/ebook-covers/73618/image_highres/BLK_TC2022862841.jpg" style="height:280px" />
+   	   	  </div>
+   	   	  <div class="about">
+   	   	  	<h1 class="title">Interstellar</h1>
+   	   	  	<h3 class="subtitle">Justin Bieber</h3>
+            <h2 class="subtitle">Music Science</h3>
+   	   	  </div>
+   	   	  <div class="counter">
+            <div class="btn" onclick="btnDecrease()">-</div>
+   	   	  	<div class="count">1</div>
+   	   	  	<div class="btn" onclick="btnIncrease()">+</div>
+   	   	  </div>
+   	   	  <div class="prices">
+   	   	  	<div class="amount">Rp 15.000</div>
+   	   	  	<div class="save"><u>Save for later</u></div>
+   	   	  	<div class="remove" onclick="btnRemove()">Remove</div>
+   	   	  </div>
+   	   </div>
+
+   	   <div class="Cart-Items pad">
+   	   	  <div class="image-box">
+            <img src="https://ebooks.gramedia.com/ebook-covers/72895/image_highres/BLK_ERS2022523493.jpg" style="height:280px" />
+          </div>
+          <div class="about">
+            <h1 class="title">Rajni Sari</h1>
+            <h3 class="subtitle">Justin Bieber</h3>
+            <h2 class="subtitle">Music Science</h3>
+   	   	  </div>
+   	   	  <div class="counter">
+   	   	  	<div class="btn">-</div>
+   	   	  	<div class="count">3</div>
+   	   	  	<div class="btn">+</div>
+   	   	  </div>
+   	   	  <div class="prices">
+   	   	  	<div class="amount">Rp 20000</div>
+   	   	  	<div class="save"><u>Save for later</u></div>
+            <div class="remove" onclick="btnRemove()">Remove</div>
+   	   	  </div>
+   	   </div>
+   	 <hr> 
+   	 <div class="checkout">
+   	 <div class="total">
+   	 	<div>
+   	 		<div class="Subtotal">Sub-Total</div>
+   	 		<div class="items">1</div>
+        <div>items</div>
+   	 	</div>
+   	 	<div class="total-amount">Rp 28.000</div>
+   	 </div>
+     <button class="button" onclick="checkoutAlert()">Checkout</button></div>
+   </div>
+   <script src="cartscript.js"></script>
+</body>
+</html>
