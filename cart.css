@@ -57,6 +57,7 @@ body{
 	height: 100%;
 	width: 24%;
 }
+
 .title{
 	padding-top: 10px;
 	line-height: 10px;
@@ -64,6 +65,10 @@ body{
 	font-family: 'Open Sans';
 	font-weight: 800;
 	color: #202020;
+}
+
+.title-book {
+  display: inline-block;
 }
 .subtitle{
 	line-height: 10px;
@@ -178,4 +183,8 @@ hr{
 	font-family: 'Open Sans';
 	font-weight: 600;
 	color: #202020;
+}
+
+.items {
+  display: inline;
 }
