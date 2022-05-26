@@ -25,6 +25,16 @@ body{
 	align-items: center;
 }
 
+.back-home {
+  margin-bottom: 5px;
+  color: black;
+}
+
+.back-home:hover {
+  color: orange;
+  transition: linear 0.1s;
+}
+
 .Heading{
 	font-size: 20px;
 	font-family: 'Open Sans';
