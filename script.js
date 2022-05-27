@@ -220,7 +220,7 @@ function load(category){
       <div class="card-body">
       <h5 class="card-title">${BOOKS_AVALAIBLE[i].name}</h5>
       <p class="card-text">${BOOKS_AVALAIBLE[i].author}</p>
-      <p class="card-text">category: ${BOOKS_AVALAIBLE[i].category}</p>
+      <p class="card-text">Category: ${BOOKS_AVALAIBLE[i].category}</p>
       </div>
       <div class="card-footer">
       <small class="text-muted">Price: IDR ${BOOKS_AVALAIBLE[i].price}</small>
